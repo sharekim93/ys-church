@@ -1,4 +1,3 @@
-import { CLIENT_PUBLIC_FILES_PATH } from "next/dist/shared/lib/constants";
 import Image from "next/image";
 import { Carousel } from "react-bootstrap";
 
@@ -10,8 +9,8 @@ const mainCarousel = () => {
           className="d-block w-100"
           src="/vercel.svg"
           alt="First slide"
-          width={200}
-          height={200}
+          width={590}
+          height={398}
         />
       </Carousel.Item>
       <Carousel.Item>
@@ -19,8 +18,8 @@ const mainCarousel = () => {
           className="d-block w-100"
           src="/next.svg"
           alt="Second slide"
-          width={200}
-          height={200}
+          width={590}
+          height={398}
         />
       </Carousel.Item>
       <Carousel.Item>
@@ -28,8 +27,8 @@ const mainCarousel = () => {
           className="d-block w-100"
           src="/thirteen.svg"
           alt="Third slide"
-          width={200}
-          height={200}
+          width={590}
+          height={398}
         />
       </Carousel.Item>
     </Carousel>
