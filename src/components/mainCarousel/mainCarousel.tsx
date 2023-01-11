@@ -3,18 +3,16 @@ import Carousel from "react-bootstrap/Carousel";
 
 const mainCarousel = () => {
   return (
-    <Carousel fade className="w-100">
+    <Carousel fade>
       <Carousel.Item>
         <Image
-          className="d-block"
+          className="d-block w-100"
           src="/gd_y202311.jpg"
           alt="banner"
           width={590}
           height={398}
-          sizes="100vw"
           style={{
-            width: "100%",
-            height: "auto",
+            height: "40vh",
           }}
         />
       </Carousel.Item>
