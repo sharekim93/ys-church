@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="py-3 my-4">
+    <footer className="py-3 my-4 bg-light">
       <p className="text-center text-muted">
         (우)476-823 경기도 양평군 양서면 북한강로 29
       </p>

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import styles from "src/styles/header.module.scss";
 
 const Header = () => {
   return (
@@ -11,7 +12,7 @@ const Header = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between px-4 py-3 mb-4 border-bottom bg-light">
         <Link
           href="/"
           className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
@@ -22,22 +23,22 @@ const Header = () => {
         <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
           <li>
             <Link href="#" className="nav-link px-2 link-dark">
-              교회소개
+              <p className={styles.linkBtn}>교회소개</p>
             </Link>
           </li>
           <li>
             <Link href="#" className="nav-link px-2 link-dark">
-              교회소식
+              <p className={styles.linkBtn}>교회소식</p>
             </Link>
           </li>
           <li>
             <Link href="#" className="nav-link px-2 link-dark">
-              교회앨범
+              <p className={styles.linkBtn}>교회앨범</p>
             </Link>
           </li>
           <li>
             <Link href="#" className="nav-link px-2 link-dark">
-              오시는길
+              <p className={styles.linkBtn}>오시는길</p>
             </Link>
           </li>
         </ul>
