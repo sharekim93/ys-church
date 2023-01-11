@@ -12,7 +12,7 @@ const Header = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between px-4 px-2 mb-4 border-bottom bg-light">
+      <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between px-4 border-bottom bg-light">
         <Link
           href="/"
           className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
