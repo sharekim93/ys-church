@@ -13,6 +13,7 @@ const Header = () => {
       </Head>
 
       <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between px-4 border-bottom bg-light">
+        <h1 className="visually-hidden">양수교회</h1>
         <Link
           href="/"
           className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
