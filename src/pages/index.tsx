@@ -96,11 +96,11 @@ export default function Home() {
         <Container>
           <Row>
             <Col>
-              <h3 className="text-center mt-4 py-4">오시는 길</h3>
+              <h3 className="text-start mt-4 py-4">오시는 길</h3>
               <div id="map" style={{ width: 500, height: 400 }}></div>
             </Col>
             <Col>
-              <h3 className="text-center mt-4 py-4">교회소식</h3>
+              <h3 className="text-start mt-4 py-4">교회소식</h3>
             </Col>
           </Row>
         </Container>
