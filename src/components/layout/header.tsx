@@ -2,6 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "src/styles/header.module.scss";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 const Header = () => {
   return (
@@ -11,38 +15,26 @@ const Header = () => {
         <meta name="description" content="양수교회에 오신 것을 환영합니다" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-
-      <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between px-4 border-bottom bg-light">
+      <header className="mb-4">
         <h1 className="visually-hidden">양수교회</h1>
-        <Link
-          href="/"
-          className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
-        >
-          <Image src="/logo.png" width={250} height={100} alt="logo" />
-        </Link>
-
-        <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li>
-            <Link href="#" className="nav-link px-4 link-dark">
-              <p className={styles.linkBtn}>교회소개</p>
-            </Link>
-          </li>
-          <li>
-            <Link href="#" className="nav-link px-4 link-dark">
-              <p className={styles.linkBtn}>교회소식</p>
-            </Link>
-          </li>
-          <li>
-            <Link href="#" className="nav-link px-4 link-dark">
-              <p className={styles.linkBtn}>교회앨범</p>
-            </Link>
-          </li>
-          <li>
-            <Link href="#" className="nav-link px-4 link-dark">
-              <p className={styles.linkBtn}>오시는길</p>
-            </Link>
-          </li>
-        </ul>
+        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+          <Container>
+            <Navbar.Brand href="#home">
+              <Image src="/logo.png" width={250} height={100} alt="logo" />
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="ms-auto">
+                <Nav.Link href="#features">교회소개</Nav.Link>
+                <Nav.Link href="#pricing">교회소식</Nav.Link>
+                <Nav.Link href="#deets">교회 앨범</Nav.Link>
+                <Nav.Link eventKey={2} href="#memes">
+                  오시는 길
+                </Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
       </header>
     </>
   );
