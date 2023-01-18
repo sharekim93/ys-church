@@ -1,9 +1,10 @@
 import Script from "next/script";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { MainCarousel } from "../components/mainCarousel";
-import { FaPlaceOfWorship, FaCross, FaHome } from "react-icons/fa";
+import { FaPlaceOfWorship, FaCross, FaHome, FaWindows } from "react-icons/fa";
 
 import { Nanum_Pen_Script, Zen_Kaku_Gothic_Antique } from "@next/font/google";
 
@@ -45,10 +46,10 @@ export default function Home() {
           <h3 className="visually-hidden">표어 이미지</h3>
           <MainCarousel />
         </Container>
-        <Container>
+        <Container fluid className="">
           <h3 className="text-center mt-4 py-4">예배시간 안내</h3>
-          <Row className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between mt-4 py-4 border">
-            <Col className="text-center fs-6 border-end">
+          <Row className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between mt-4 p-4 border bg-light ">
+            <Col sm className="text-center fs-6 border-end">
               <h4 className="visually-hidden">주일예배</h4>
               <p className="fs-1">
                 <FaCross />
@@ -57,7 +58,7 @@ export default function Home() {
               <p className="text-muted">주일 오전 11:00</p>
               <p className="text-muted">본당</p>
             </Col>
-            <Col className="text-center fs-6 border-end">
+            <Col sm className="text-center fs-6 border-end">
               <h4 className="visually-hidden">수요예배</h4>
               <p className="fs-1">
                 <FaPlaceOfWorship />
@@ -66,7 +67,7 @@ export default function Home() {
               <p className="text-muted">수요일 오전 10:00</p>
               <p className="text-muted">소예배실</p>
             </Col>
-            <Col className="text-center fs-6 border-end">
+            <Col sm className="text-center fs-6">
               <h4 className="visually-hidden">구역예배</h4>
               <p className="fs-1">
                 <FaHome />
@@ -75,7 +76,7 @@ export default function Home() {
               <p className="text-muted">금요일</p>
               <p className="text-muted">각 가정</p>
             </Col>
-            <Col className="text-end fs-6">
+            <Col sm className="text-end fs-6 visually-hidden">
               <h4 className="visually-hidden">그 외예배</h4>
               <p className="fs-4 text-center">그 외 예배</p>
               <Row>
@@ -95,12 +96,12 @@ export default function Home() {
         </Container>
         <Container>
           <Row>
-            <Col>
-              <h3 className="text-start mt-4 py-4">오시는 길</h3>
-              <div id="map" style={{ width: 500, height: 400 }}></div>
+            <Col sm>
+              <h3 className="text-center mt-4 py-4">오시는 길</h3>
+              <div id="map" className="w-100" style={{ height: 400 }}></div>
             </Col>
-            <Col>
-              <h3 className="text-start mt-4 py-4">교회소식</h3>
+            <Col sm>
+              <h3 className="text-center mt-4 py-4">교회소식</h3>
             </Col>
           </Row>
         </Container>
