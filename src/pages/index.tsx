@@ -97,11 +97,21 @@ export default function Home() {
         <Container>
           <Row>
             <Col lg>
-              <h3 className="text-center mt-4 py-4">오시는 길</h3>
-              <div id="map" className="w-100" style={{ height: 400 }}></div>
+              <h3 className="text-center mt-4 py-4">교회소식</h3>
             </Col>
             <Col lg>
-              <h3 className="text-center mt-4 py-4">교회소식</h3>
+              <h3 className="text-center mt-4 py-4">오시는 길</h3>
+              <Row>
+                <Col>
+                  <p className="lead"><strong>도로명 주소</strong></p>
+                  <p className="text-secondary">경기도 양평군 양서면 북한강로 29</p>
+                  <p className="lead mt-4"><strong>지번 주소</strong></p>
+                  <p className="text-secondary">경기도 양평군 양서면 양수리 1002</p>
+                </Col>
+                <Col>
+                <div id="map" className="w-100" style={{ height: 400 }} />
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Container>
