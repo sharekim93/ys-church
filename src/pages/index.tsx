@@ -3,7 +3,7 @@ import Script from "next/script";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { MainCarousel } from "../components/mainCarousel";
+import { MainCarousel } from "../components/Carousel";
 import { FaPlaceOfWorship, FaCross, FaHome, FaWindows } from "react-icons/fa";
 
 import { Nanum_Pen_Script, Zen_Kaku_Gothic_Antique } from "@next/font/google";
